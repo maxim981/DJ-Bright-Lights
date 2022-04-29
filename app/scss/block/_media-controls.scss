@@ -1,0 +1,113 @@
+.media-controls {
+	transform: translateY(100%);
+	width: 100%;
+	z-index: 9;
+	position: fixed;
+	bottom: 0;
+	height: 90px;
+	background: #181818;
+	border-top: 1px solid #282828;
+	transition: 0.5s;
+	user-select: none;
+	&__inner {
+		display: flex;
+	}
+	&__nav {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		padding-top: 16px;
+		height: 100%;
+		margin: auto;
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__button:not(:last-child) {
+		margin-right: 20px;
+	}
+	&__button img {
+		width: 20px;
+		height: 20px;
+		display: block;
+	}
+	&__progress-container {
+		cursor: pointer;
+		position: relative;
+		padding-top: 12px;
+		height: 18px;
+		display: flex;
+		align-items: center;
+	}
+	&__progress-container:hover &__fade {
+		opacity: 1;
+	}
+	&__progress-container--hover &__fade {
+		opacity: 1;
+	}
+	&__progress {
+		position: relative;
+		display: block;
+		width: 500px;
+		height: 3px;
+		background: #363636;
+	}
+	&__line {
+		background: white;
+		width: 0;
+		height: 100%;
+	}
+	&__fade {
+		position: absolute;
+		height: 12px;
+		width: 12px;
+		border-radius: 100%;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		background: white;
+		opacity: 0;
+	}
+	&__song-info {
+		font-weight: normal;
+		padding: 20px 20px 20px 0;
+	}
+	&__author {
+		font-size: 14px;
+	}
+	&__song {
+		font-weight: normal;
+		font-size: 12px;
+		color: #808080;
+	}
+	&__logo {
+		padding: 15px;
+	}
+	&__volume {
+		margin-left: auto;
+		margin-right: 25px;		
+	}
+	&__play {
+		position: relative;
+	}
+	&__play img {
+		height: 40px;
+		width: 40px;
+	}
+	&__time {
+		position: absolute;
+		font-weight: normal;
+		font-size: 11px;
+	}
+	&__time-current {
+		left: -50px;
+	}
+	&__time-duration {
+		right: -50px;
+	}
+}
+.media-controls--active {
+	transform: translateY(0);
+}

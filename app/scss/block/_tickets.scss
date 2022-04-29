@@ -1,0 +1,112 @@
+.tickets {
+	&__inner {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	&__button-prev {
+		left: -80px;
+		position: absolute;
+		fill: white;
+		stroke: white;
+		opacity: 0.5;
+	}
+	&__button-next {
+		right: -80px;
+		position: absolute;
+		fill: white;
+		stroke: white;
+		opacity: 0.5;
+	}
+	&__button-prev:hover,
+	&__button-next:hover {
+		opacity: 1;
+	}
+	&__button-img {
+		display: block;
+	}
+	&__slide {
+		border-top-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		background: var(--ticket-bg);
+		overflow: hidden;
+  		height: auto;
+  		transition: 0.3s;
+	}
+	&__slide:hover &__img {
+		filter: brightness(1.2);
+	}
+	&__slide:hover &__label {
+		background: var(--basic-orange);
+	}
+	&__slide:hover &__city {
+		color: var(--basic-orange);
+		opacity: 1;
+	}
+	&__slide:hover &__place {
+		text-shadow: 0 0 20px white;
+	}
+	&__item {
+		height: 100%;
+	}
+	&__link {
+		display: block;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	&__header {
+		height: 280px;
+		overflow: hidden;
+		border-bottom-right-radius: 30px;
+	}
+	&__info {
+		padding: 30px 35px 0 35px;
+	}
+	&__footer {
+		margin-top: auto;
+		display: flex;
+		justify-content: space-between;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__img {
+		transition: 0.3s;
+	}
+	&__city {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 27px;
+		opacity: 0.5;
+		margin-bottom: 20px;
+		transition: 0.3s;
+	}
+	&__place {
+		font-size: 18px;
+		line-height: 27px;
+		font-weight: 500;
+		margin-bottom: 30px;
+		transition: 0.3s;
+	}
+
+	&__date, &__label {
+		flex-basis: 50%;
+		display: flex;
+		align-items: center;
+	}
+	&__date {
+		opacity: 0.5;
+		padding: 0 35px;
+	}
+	&__label {
+		padding: 18px 35px;
+		background: var(--basic-violet);
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		border-top-left-radius: 30px;
+		transition: 0.3s;
+	}
+}

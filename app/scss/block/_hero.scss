@@ -1,0 +1,17 @@
+.hero {
+	padding-top: 322px;
+	&__music {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 130px;
+	}
+	&__song-title {
+		align-self: start;
+		margin-bottom: 80px;
+		fill: blue;
+		display: block;
+	}
+}
+
+

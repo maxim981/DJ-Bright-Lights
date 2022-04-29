@@ -1,0 +1,52 @@
+@import 'block/null';
+@import 'block/variables';
+@import 'block/font';
+@import 'block/page-index';
+@import 'block/header';
+@import 'block/hero';
+@import 'block/hero-news';
+@import 'block/section-title';
+@import 'block/player';
+@import 'block/about-singer';
+@import 'block/info-points';
+@import 'block/review';
+@import 'block/last-tracks';
+@import 'block/tracklist';
+@import 'block/follow';
+@import 'block/events-gallery';
+@import 'block/swiper-vars';
+@import 'block/swiper';
+@import 'block/tickets';
+@import 'block/footer';
+@import 'block/social';
+@import 'block/media-controls';
+@import 'block/eq';
+@import 'block/volume';
+
+
+.html {
+	height: 100%;
+}
+
+.body {
+	background: url('../img/hero/main-screen.png') no-repeat #1C1B21;
+	background-size: cover;
+	height: 100%;
+	color: var(--basic-white);
+	font-family: 'Poppins';
+	font-weight: 700;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+
+
+
+

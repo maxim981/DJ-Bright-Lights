@@ -1,0 +1,17 @@
+@mixin fontFace($fontFamily, $url, $fontName, $fontWeight) {
+	@font-face {
+		font-family: '#{$fontFamily}';
+		src: url('#{$url}/#{$fontName}.woff2') format('woff2'),
+			url('#{$url}/#{$fontName}.woff') format('woff');
+		font-weight: #{$fontWeight};
+		font-style: normal;
+	}
+}
+
+@include fontFace('Roboto', '../font', 'Roboto-Regular', 400);
+@include fontFace('Poppins', '../font', 'Poppins-Regular', 400);
+@include fontFace('Poppins', '../font', 'Poppins-Medium', 500);
+@include fontFace('Poppins', '../font', 'Poppins-SemiBold', 600);
+@include fontFace('Poppins', '../font', 'Poppins-Bold', 700);
+
+

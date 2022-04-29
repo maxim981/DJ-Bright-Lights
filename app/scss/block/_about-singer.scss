@@ -1,0 +1,48 @@
+.about-singer {
+	&__inner {
+		display: grid;
+		grid-template-columns: 540px auto;
+		justify-content: space-between;
+	}
+	&__text-block {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		opacity: 0.7;
+		margin-bottom: 60px;
+		padding-right: 10px;
+	}
+	&__gallery-inner {
+		position: relative;
+		height: 460px;
+		width: 410px;
+		transform: translateY(-60px);
+	}
+	&__gallery-inner:hover &__item:nth-child(1) {
+		transform: translate(60px, 60px);
+		z-index: 1;
+		opacity: 0.3;
+	}
+	&__gallery-inner:hover &__item:nth-child(2) {
+		transform: translate(0px, 0px);
+		z-index: 2;
+		opacity: 1;
+	}
+	&__item {
+		position: absolute;
+		transition: 0.3s;
+		border-top-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+	&__item:nth-child(1) {
+		z-index: 1;
+	}
+	&__item:nth-child(2) {
+		transform: translate(60px, 60px);
+		opacity: 0.3;
+	}
+
+	&__img {
+		display: block;
+	}
+}

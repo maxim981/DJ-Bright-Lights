@@ -1,0 +1,11 @@
+.section-title {
+	user-select: none;
+	&__title {
+		display: inline-block;
+		font-size: 48px;
+		padding-bottom: 60px;
+	}
+	&__logo {
+		margin-right: 30px;	
+	}
+}

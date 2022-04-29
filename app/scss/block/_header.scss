@@ -1,0 +1,42 @@
+.header {
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 600;
+	&__inner {
+		display: flex;
+		align-items: center;
+		width: 920px;
+		padding-top: 30px;
+	}
+
+	&__logo {
+		margin-right: 65px;
+	}
+	&__list {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__img {
+		display: block;
+	}
+
+	&__link {
+		position: relative;
+	}
+	&__link::before {
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+		content: '';
+		height: 1px;
+		width: 100%;
+		background: white;
+		transition: 0.3s;
+		opacity: 0;
+	}
+	&__link:hover::before {
+		opacity: 1;
+	}
+}

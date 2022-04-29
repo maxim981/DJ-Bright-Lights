@@ -1,0 +1,14 @@
+.last-tracks {
+	transition: 3s;
+	display: grid;
+	grid-template-columns: 510px 540px;
+	justify-content: space-between;
+	&__img-block {
+		display: inline-block;
+		border-radius: 100%;
+	}
+	&__img {
+		display: block;
+	}
+}
+

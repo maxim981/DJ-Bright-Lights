@@ -1,0 +1,42 @@
+.hero-news {
+	display: grid;
+	grid-template-columns: repeat(3, 350px);
+	grid-template-rows: (300px);
+	justify-content: space-between;
+	&__item {
+		position: relative;
+		overflow: hidden;
+		border-top-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		transition: 0.3s;
+	}
+	&__item:hover {
+		transform: translateY(-10px);
+		box-shadow: 0px 0px 15px purple;
+	}
+	&__item:hover &__bottom-panel {
+		opacity: 1;
+	}
+	&__item:hover &__img {
+	}
+	&__img {
+		display: block;
+		transition: 0.3s;
+	}
+	&__bottom-panel {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 90px;
+		display: flex;
+		align-items: center;
+		padding: 20px;
+		transition: 0.3s;
+		opacity: 0;
+		background: rgba(122, 102, 204, 0.5);
+	}
+}
